@@ -12,7 +12,5 @@ int main() {
     f.attackOfFighters(f.getFighterFromArray(0),f.getFighterFromArray(1));
     f.attackOfFighters(f.getFighterFromArray(3),f.getFighterFromArray(2));
 
-
-
     return 0;
 }
