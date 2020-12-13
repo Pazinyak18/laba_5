@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Fight.h"
+#include "fight.h"
 
 int main() {
 
@@ -9,8 +9,8 @@ int main() {
     f.addFighterToArray(Fighter("entony",50,100),2);
     f.addFighterToArray(Fighter("Max",25,1000),3);
 
-    //f.attackOfFighters(f.getFighterFromArray(0),f.getFighterFromArray(1));
-    //f.attackOfFighters(f.getFighterFromArray(3),f.getFighterFromArray(2));
+    f.attackOfFighters(f.getFighterFromArray(0),f.getFighterFromArray(1));
+    f.attackOfFighters(f.getFighterFromArray(3),f.getFighterFromArray(2));
 
 
 

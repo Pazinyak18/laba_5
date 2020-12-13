@@ -1,7 +1,8 @@
 #include <string>
 using namespace std;
+
 class Fighter {
-public:
+  public:
     Fighter();
     Fighter(string name, double hp, double damage);
     ~Fighter();
@@ -13,15 +14,12 @@ public:
     double getDamage();
     void setDamage(double damage);
 
-    void fightToenemy(Fighter* enemy);
+    void fightToEnemy(Fighter* enemy);
 
     void print();
 
-private:
+  private:
     string name;
     double hp;
     double damage;
-
-
-
 };

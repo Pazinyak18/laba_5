@@ -1,5 +1,6 @@
 #include "Fighter.h"
 #include <iostream>
+
 Fighter::Fighter() {}
 Fighter::Fighter(string name, double hp, double damage) : name(name), hp(hp), damage(damage) {}
 Fighter::~Fighter() {}
@@ -27,11 +28,11 @@ double Fighter::getDamage(){
 void Fighter::setDamage(double damage) {
     Fighter::damage = damage;
 }
-void Fighter::fightToenemy(Fighter* enemy){
+void Fighter::fightToEnemy(Fighter* enemy){
     enemy->setHp(enemy->getHp() - damage);
 }
 void Fighter::print() {
-    cout <<"name: " <<name << endl;
+    cout <<"Name: " <<name << endl;
     cout <<"HP: " << hp << endl;
     cout <<"Damage: " << damage << endl;
 }
